@@ -1,0 +1,32 @@
+/* 
+ * Two unequal columns that floats next to each other
+ */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left {
+    width: 10%;
+    min-width: 50px;
+}
+
+.right {
+    width: 80%;
+    padding-left: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.small-icon{
+    background-color: rgb(240,240,250);
+}
+
+.small-icon {
+    font-size: 0px;
+}
