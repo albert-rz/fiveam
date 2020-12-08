@@ -240,6 +240,11 @@
                  <nav aria-label="Commands" class="md-nav">
                   <ul class="md-nav__list">
                    <li class="md-nav__item">
+                    <a class="md-nav__link" href="#configuration">
+                     Configuration
+                    </a>
+                   </li>
+                   <li class="md-nav__item">
                     <a class="md-nav__link" href="#basic">
                      Basic
                     </a>
@@ -317,6 +322,11 @@
            <nav aria-label="Commands" class="md-nav">
             <ul class="md-nav__list">
              <li class="md-nav__item">
+              <a class="md-nav__link" href="#configuration">
+               Configuration
+              </a>
+             </li>
+             <li class="md-nav__item">
               <a class="md-nav__link" href="#basic">
                Basic
               </a>
@@ -343,6 +353,60 @@
          ¶
         </a>
        </h2>
+       <h4 id="configuration">
+        Configuration
+        <a class="headerlink" href="#configuration" title="Permanent link">
+         ¶
+        </a>
+       </h4>
+       <ul>
+        <li>
+         <code>
+          git config --global user.name &lt;name&gt;
+         </code>
+         - Define author name for all commits.
+        </li>
+        <li>
+         <code>
+          git config --global user.email &lt;email&gt;
+         </code>
+         - Define author email for all commits.
+        </li>
+        <li>
+         <code>
+          git config --global core.editor &lt;editor&gt;
+         </code>
+         - Set the text editor to be used.
+        </li>
+        <li>
+         <code>
+          git config --global --edit
+         </code>
+         - Open the global configuration file in a text editor.
+        </li>
+       </ul>
+       <p>
+        When configuring user name, consider using double quotes (
+        <code>
+         "
+        </code>
+        ) if it has spaces:
+       </p>
+       <div class="highlight">
+        <pre><span></span><code>git config --global user.name "Max Rockatansky"
+</code></pre>
+       </div>
+       <p>
+        Regarding the text editor, use one that is callable from a command line:
+       </p>
+       <div class="highlight">
+        <pre><span></span><code><span class="c1"># For Vi</span>
+git config --global core.editor vi
+
+<span class="c1"># For VSCode</span>
+git config --global core.editor code
+</code></pre>
+       </div>
        <h4 id="basic">
         Basic
         <a class="headerlink" href="#basic" title="Permanent link">
