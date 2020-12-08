@@ -27,4 +27,3 @@ The extension of the workspace must be `.code-workspace`.
 You will see that the VSCode bottom line is now blue (instead of purple) and the name of thew workspace appears in the top bar:
 
 ![vscode_workspaces](../assets/images/vscode_workspace.png)
-
