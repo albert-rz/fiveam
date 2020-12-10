@@ -50,15 +50,42 @@ Open `Startup Applications` and add/remove applications.
 
 #### Shutter
 
+Shutter is a feature-rich screenshot program. 
+
+You can take a screenshot of a specific area, window, the whole screen, or even of a website. You can also edit screenshots to highlight points
+
+##### Installation
+
 ```bash
-# Add apt-repo
 sudo add-apt-repository -y ppa:linuxuprising/shutter
 
-# Install
 sudo apt-get install shutter
 ```
 
+#### Xournal
+
+Xournal is an application for note taking and sketching using a stylus. It can be used to annotate a PDF.
+ 
+Xournal is compatible with **Wacom** tablets.
+
+##### Installation
+
+```bash
+sudo apt-get install xournal
+```
+
 #### wmctrl
+
+wmctrl is a command that can be used to interact with an X Window manager.
+
+
+##### Installation
+
+```bash
+sudo apt-get install wmctrl
+```
+
+##### Usage
 
 ```bash
 # List applications
