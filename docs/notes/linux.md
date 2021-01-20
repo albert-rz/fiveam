@@ -28,10 +28,17 @@ sudo apt-get install -y build-essential
 sudo apt-get install -y make
 sudo apt-get install -y ctags
 sudo apt-get install -y git
+
+# Common Python packages
 sudo apt-get install -y python3-dev
 sudo apt-get install -y python3-pip
 sudo apt-get install -y python3-venv
 sudo apt-get install -y python3-wheel python-wheel-common
+
+# Install NodeJS
+# Source: https://github.com/nodesource/distributions/blob/master/README.md
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
 # Git config
 git config --global user.name "<your user name>"
