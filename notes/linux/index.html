@@ -274,6 +274,11 @@
                     </a>
                    </li>
                    <li class="md-nav__item">
+                    <a class="md-nav__link" href="#xournal">
+                     Xournal
+                    </a>
+                   </li>
+                   <li class="md-nav__item">
                     <a class="md-nav__link" href="#wmctrl">
                      wmctrl
                     </a>
@@ -375,6 +380,11 @@
               </a>
              </li>
              <li class="md-nav__item">
+              <a class="md-nav__link" href="#xournal">
+               Xournal
+              </a>
+             </li>
+             <li class="md-nav__item">
               <a class="md-nav__link" href="#wmctrl">
                wmctrl
               </a>
@@ -435,10 +445,17 @@ sudo apt-get install -y build-essential
 sudo apt-get install -y make
 sudo apt-get install -y ctags
 sudo apt-get install -y git
+
+<span class="c1"># Common Python packages</span>
 sudo apt-get install -y python3-dev
 sudo apt-get install -y python3-pip
 sudo apt-get install -y python3-venv
 sudo apt-get install -y python3-wheel python-wheel-common
+
+<span class="c1"># Install NodeJS</span>
+<span class="c1"># Source: https://github.com/nodesource/distributions/blob/master/README.md</span>
+curl -sL https://deb.nodesource.com/setup_14.x <span class="p">|</span> sudo -E bash -
+sudo apt-get install -y nodejs
 
 <span class="c1"># Git config</span>
 git config --global user.name <span class="s2">"&lt;your user name&gt;"</span>
@@ -475,12 +492,42 @@ git config --global core.ignorecase <span class="nb">false</span>
          ¶
         </a>
        </h4>
+       <p>
+        Shutter is a feature-rich screenshot program.
+       </p>
+       <p>
+        You can take a screenshot of a specific area, window, the whole screen, or even of a website. You can also edit screenshots to highlight points
+       </p>
+       <h5>
+        Installation
+       </h5>
        <div class="highlight">
-        <pre><span></span><code><span class="c1"># Add apt-repo</span>
-sudo add-apt-repository -y ppa:linuxuprising/shutter
+        <pre><span></span><code>sudo add-apt-repository -y ppa:linuxuprising/shutter
 
-<span class="c1"># Install</span>
 sudo apt-get install shutter
+</code></pre>
+       </div>
+       <h4 id="xournal">
+        Xournal
+        <a class="headerlink" href="#xournal" title="Permanent link">
+         ¶
+        </a>
+       </h4>
+       <p>
+        Xournal is an application for note taking and sketching using a stylus. It can be used to annotate a PDF.
+       </p>
+       <p>
+        Xournal is compatible with
+        <strong>
+         Wacom
+        </strong>
+        tablets.
+       </p>
+       <h5>
+        Installation
+       </h5>
+       <div class="highlight">
+        <pre><span></span><code>sudo apt-get install xournal
 </code></pre>
        </div>
        <h4 id="wmctrl">
@@ -489,6 +536,19 @@ sudo apt-get install shutter
          ¶
         </a>
        </h4>
+       <p>
+        wmctrl is a command that can be used to interact with an X Window manager.
+       </p>
+       <h5>
+        Installation
+       </h5>
+       <div class="highlight">
+        <pre><span></span><code>sudo apt-get install wmctrl
+</code></pre>
+       </div>
+       <h5>
+        Usage
+       </h5>
        <div class="highlight">
         <pre><span></span><code><span class="c1"># List applications</span>
 wmctrl -l
