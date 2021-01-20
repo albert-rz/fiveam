@@ -29,6 +29,10 @@ sudo apt-get install -y make
 sudo apt-get install -y ctags
 sudo apt-get install -y git
 
+# Zsh and Oh-My-Zsh
+sudo apt-get install -y zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Common Python packages
 sudo apt-get install -y python3-dev
 sudo apt-get install -y python3-pip
