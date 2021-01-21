@@ -51,8 +51,11 @@ sudo apt-get install -y python3-wheel python-wheel-common
 # Source: https://github.com/nodesource/distributions/blob/master/README.md
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
+```
 
-# Git config
+## Git configuration
+
+```bash
 git config --global user.name "<your user name>"
 git config --global user.email <your email>
 git config --global core.editor code
