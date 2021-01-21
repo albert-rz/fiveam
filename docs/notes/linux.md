@@ -15,6 +15,14 @@ lsb_release -cs
 cat /etc/os-release
 ```
 
+### Reload .bashrc
+
+Assuming that your .bashrc file is in HOME:
+
+```bash
+source ~/.bashrc
+```
+
 ## Common steps after installation
 
 ```bash
