@@ -34,8 +34,9 @@ push:
 	git commit -am "Update"
 	git push
 
-# deploy:
-#	mkdocs gh-deploy --force
+
+deploy:
+	mkdocs gh-deploy --force
 
 
 serve:

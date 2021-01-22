@@ -26,7 +26,7 @@ source ~/.bashrc
 ## Common steps after installation
 
 ```bash
-# Upagrade
+# Upgrade
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get autoremove -y
