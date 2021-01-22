@@ -249,12 +249,22 @@
                      Check version
                     </a>
                    </li>
+                   <li class="md-nav__item">
+                    <a class="md-nav__link" href="#reload-bashrc">
+                     Reload .bashrc
+                    </a>
+                   </li>
                   </ul>
                  </nav>
                 </li>
                 <li class="md-nav__item">
                  <a class="md-nav__link" href="#common-steps-after-installation">
                   Common steps after installation
+                 </a>
+                </li>
+                <li class="md-nav__item">
+                 <a class="md-nav__link" href="#git-configuration">
+                  Git configuration
                  </a>
                 </li>
                 <li class="md-nav__item">
@@ -355,12 +365,22 @@
                Check version
               </a>
              </li>
+             <li class="md-nav__item">
+              <a class="md-nav__link" href="#reload-bashrc">
+               Reload .bashrc
+              </a>
+             </li>
             </ul>
            </nav>
           </li>
           <li class="md-nav__item">
            <a class="md-nav__link" href="#common-steps-after-installation">
             Common steps after installation
+           </a>
+          </li>
+          <li class="md-nav__item">
+           <a class="md-nav__link" href="#git-configuration">
+            Git configuration
            </a>
           </li>
           <li class="md-nav__item">
@@ -428,6 +448,19 @@ lsb_release -cs
 cat /etc/os-release
 </code></pre>
        </div>
+       <h3 id="reload-bashrc">
+        Reload .bashrc
+        <a class="headerlink" href="#reload-bashrc" title="Permanent link">
+         ¶
+        </a>
+       </h3>
+       <p>
+        Assuming that your .bashrc file is in HOME:
+       </p>
+       <div class="highlight">
+        <pre><span></span><code><span class="nb">source</span> ~/.bashrc
+</code></pre>
+       </div>
        <h2 id="common-steps-after-installation">
         Common steps after installation
         <a class="headerlink" href="#common-steps-after-installation" title="Permanent link">
@@ -435,7 +468,7 @@ cat /etc/os-release
         </a>
        </h2>
        <div class="highlight">
-        <pre><span></span><code><span class="c1"># Upagrade</span>
+        <pre><span></span><code><span class="c1"># Upgrade</span>
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get autoremove -y
@@ -445,6 +478,10 @@ sudo apt-get install -y build-essential
 sudo apt-get install -y make
 sudo apt-get install -y ctags
 sudo apt-get install -y git
+
+<span class="c1"># Zsh and Oh-My-Zsh</span>
+sudo apt-get install -y zsh
+sh -c <span class="s2">"</span><span class="k">$(</span>curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span class="k">)</span><span class="s2">"</span>
 
 <span class="c1"># Common Python packages</span>
 sudo apt-get install -y python3-dev
@@ -456,9 +493,16 @@ sudo apt-get install -y python3-wheel python-wheel-common
 <span class="c1"># Source: https://github.com/nodesource/distributions/blob/master/README.md</span>
 curl -sL https://deb.nodesource.com/setup_14.x <span class="p">|</span> sudo -E bash -
 sudo apt-get install -y nodejs
-
-<span class="c1"># Git config</span>
-git config --global user.name <span class="s2">"&lt;your user name&gt;"</span>
+</code></pre>
+       </div>
+       <h2 id="git-configuration">
+        Git configuration
+        <a class="headerlink" href="#git-configuration" title="Permanent link">
+         ¶
+        </a>
+       </h2>
+       <div class="highlight">
+        <pre><span></span><code>git config --global user.name <span class="s2">"&lt;your user name&gt;"</span>
 git config --global user.email &lt;your email&gt;
 git config --global core.editor code
 git config --global core.ignorecase <span class="nb">false</span>
