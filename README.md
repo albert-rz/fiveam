@@ -17,3 +17,8 @@ Palette:
 Size for screenshots: 1000, 700
 
 wmctrl -r Visual Studio Code -e 0,0,0,1000,700
+
+
+Resources
+
+https://www.freepik.com/drawkman/

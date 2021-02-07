@@ -1,4 +1,4 @@
-# Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+# Copyright (c) 2020 Albert Ruiz <ru.albert@gmail.com>
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to
@@ -35,6 +35,7 @@ copyright: Copyright &copy; 2020 albert-rz
 # Configuration
 theme:
   name: material
+#  custom_dir: material
 
   # 404 page
   static_templates:
@@ -47,10 +48,8 @@ theme:
   # Default values, taken from mkdocs_theme.yml
   language: en
   features:
-    - navigation.instant
-    - navigation.sections
-    - navigation.tabs
-    # - toc.integrate
+    - tabs
+    #- instant
   palette:
     scheme: default
     primary: indigo
@@ -66,6 +65,8 @@ theme:
 plugins:
   - search
   - macros
+#  - minify:
+#      minify_html: true
 
 # Customization
 extra:
@@ -75,21 +76,18 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/albert-rz/
 
-extra_css:
-  - assets/css/custom.css
-
 # Extensions
 markdown_extensions:
-  - admonition
-  - abbr
-  - attr_list
-  - def_list
-  - footnotes
+  - markdown.extensions.admonition
+  - markdown.extensions.abbr
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
   - meta
-  - md_in_html
-  - toc:
+  - markdown.extensions.toc:
       permalink: true
-      toc_depth: 5
+      toc_depth: 4
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
@@ -109,6 +107,8 @@ markdown_extensions:
       repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -119,31 +119,40 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+extra_css:
+  - assets/css/custom.css
+
+extra_javascript:
+  # - https://cdnjs.cloudflare.com/ajax/libs/brain.js/2.0.0-alpha.12/brain-browser.min.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/three.js
+  - https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js
+  - https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.4.0/dist/tf.min.js
+
 # Page tree
 nav:
   - Home: index.md
   #- Tensorflow.js:
   #  - Setup: tensorflow/setup.md
-  # - Machine Learning:
-  #   - Glossary: ml/glossary.md
+  - Machine Learning:
+    - Glossary: ml/glossary.md
   - Dev Notes:
     - Docker:
       - Commands: notes/docker/commands.md
       - Portainer: notes/docker/portainer.md
     - Git: notes/git.md
-    - Linux:
-      - Commands: notes/linux/commands.md
-      - Tools: notes/linux/tools.md
+    - Linux: notes/linux.md
+    - vscode: notes/vscode.md
     - VSCode:
       - Extensions: notes/vscode/extensions.md
       - Workspaces: notes/vscode/workspaces.md
-      - Python: notes/vscode/python.md
-  # - Snippets:
-  #   - Bash: snippets/bash.md
-  #   - Makefile: snippets/makefile.md
-  #   - Python: snippets/python.md
-  
-# # Google Analytics
-# google_analytics:
-#   - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
-#   - auto
+  - Snippets:
+    - Bash: snippets/bash.md
+    - Makefile: snippets/makefile.md
+    - Python: snippets/python.md
+
+
+
+# Google Analytics
+#google_analytics:
+#  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+#  - auto

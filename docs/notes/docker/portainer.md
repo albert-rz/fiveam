@@ -1,72 +1,13 @@
-###### Hola
-# Docker notes
+# Portainer - A Docker GUI
 
-## Commands
-
-#### List images
-
-```bash
-# List all images
-docker images
-
-# List images IDs
-docker images -q
-```
-
-#### Delete images
-
-```bash
-# Delete image by ID
-docker rmi <image-id>
-
-# Delete all images
-docker rmi $(docker images -q)
-```
-
-#### Build an image
-
-```bash
-# Build from a Dockerfile in the current directory and tag the image
-docker build -t myimage:1.0 .
-```
-
-#### List containers
-
-```bash
-# List running containers
-docker container ls
-
-# List all containers
-docker container ls -a
-
-# List all container IDs
-docker container ls -a -q 
-```
-
-`container ls` has the alias: `ps`. So the previous commands can be also executed like:
-
-
-```bash
-# List running containers
-docker ps
-
-# List all containers
-docker ps -a
-
-# List all container IDs
-docker ps -a -q 
-```
-
-## Portainer - A Docker GUI
-
-#### Introduction
+### Introduction
 
 Portainer is an open source container management tool for Kubernetes, Docker, Docker Swarm and Azure ACI (see [link](https://documentation.portainer.io/)). It allows containers deployment and management without the need to write code.
 
-![portainer](../assets/images/portainer.png)
+![portainer](../../assets/images/portainer.png)
 
 
-#### Running as a container
+### Running as a container
 
 Portainer is run as Docker container. From the command line:
 
@@ -91,7 +32,7 @@ docker container stop portainer
     
     Once created, simply use the `start` and `stop` actions.
 
-#### admin password
+### admin password
 
 The very first time you execute Portainer you will be asked to set a password for the `admin` user. After that you will have to login:
 
@@ -111,10 +52,3 @@ docker container start portainer
 ```
 
 The `helper-reset-password` tool will output the new `admin` password.
-
-
-
-
-## Glossary
-
-{% include 'glossary/docker.md' %}
