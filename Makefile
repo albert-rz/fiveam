@@ -36,7 +36,7 @@ push:
 
 
 deploy:
-	mkdocs gh-deploy --force
+	$(MKDOCS) gh-deploy --force
 
 
 serve:
