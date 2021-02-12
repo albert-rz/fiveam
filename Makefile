@@ -47,7 +47,7 @@ serve: ## start the MkDocs server
 
 deploy: ## deploy static website to GitHub pages
 	$(MKDOCS) build
-	$(PY) -m html_pprint
+	$(PYTHON) -m html_pprint
 	$(GHP) -f -p site/
 
 clean: ## remove Python file artifacts and site
