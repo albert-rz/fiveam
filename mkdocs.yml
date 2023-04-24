@@ -71,6 +71,7 @@ theme:
   favicon: assets/favicon.png
   icon:
     logo: logo
+  logo: assets/5am.svg
 
 # Plugins
 plugins:
@@ -88,6 +89,9 @@ extra:
       link: https://github.com/albert-rz/fiveam
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/albert-rz/
+
+extra_css:
+  - stylesheets/extra.css
 
 # Extensions
 markdown_extensions:
@@ -134,3 +138,7 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
+  - Notes:
+    - Linux:
+      - Users and groups in Linux: articles/users_groups.md
+  - About: about/index.md
