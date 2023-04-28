@@ -1,0 +1,13 @@
+{
+    "name": "FiveAM",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ritwickdey.LiveServer"
+            ]
+        }
+    },
+    "postCreateCommand": "pip install -r requirements.txt",
+    "remoteUser": "root"
+}

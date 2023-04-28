@@ -1,6 +1,22 @@
+:root {
+    --pink: #dd2e57;
+    --red-pink: rgb(234, 55, 75);
+  }
+
 .pres {
     margin: auto;
     text-align: center;
     font-size: 14pt;
     color: #808080;
+}
+
+.fiveam-button {
+    background-color: var(--red-pink) !important;
+    border-color: var(--red-pink) !important;
+    color: white !important;
+}
+
+.fiveam-button:hover {
+    background-color: var(--md-typeset-a-color) !important;
+    border-color: var(--md-typeset-a-color) !important;
 }

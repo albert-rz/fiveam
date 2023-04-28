@@ -3,9 +3,11 @@
         visibility: hidden;
     }
     h1 {
-        display: none;
+        visibility: hidden;
+        font-size: 0pt !important;
     }
 </style>
+
 
 <div class="pres">
     <img src="assets/coding.jpeg" width="50%">
@@ -16,17 +18,13 @@
 
 <hr>
 
-## Featured articles
+## Featured posts
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+### Users and groups in Linux
 
+Managing users and groups is an essential task for system administrators, who have to ensure that the system is secure and runs smoothly. This also includes software engineers working with Dockerfiles.
 
-## Project layout
+In this blog post, we'll cover the basics of user and group management in Linux.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+[Read](articles/users_groups.md){ .md-button .fiveam-button }
+

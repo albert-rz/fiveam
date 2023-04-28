@@ -55,16 +55,6 @@ theme:
   palette:
     - scheme: default
       primary: white
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -141,4 +131,5 @@ nav:
   - Notes:
     - Linux:
       - Users and groups in Linux: articles/users_groups.md
+      - Process management: articles/process_management.md
   - About: about/index.md
