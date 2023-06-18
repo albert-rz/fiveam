@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://albert-rz.github.io/fiveam/</loc>
+         <lastmod>2023-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://albert-rz.github.io/fiveam/about/</loc>
+         <lastmod>2023-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://albert-rz.github.io/fiveam/articles/process_management/</loc>
+         <lastmod>2023-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://albert-rz.github.io/fiveam/articles/users_groups/</loc>
+         <lastmod>2023-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>

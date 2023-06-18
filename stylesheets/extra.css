@@ -1,0 +1,34 @@
+:root {
+    --pink: rgb(234, 55, 75);
+    --blue: rgb(68,148,224);
+    --md-accent-fg-color: rgb(234, 55, 75) !important;
+}
+
+
+.pres {
+    margin: auto;
+    text-align: center;
+    font-size: 14pt;
+    color: #808080;
+}
+
+.fiveam-button:hover {
+    background-color: var(--pink) !important;
+    border-color: var(--pink) !important;
+    color: white !important;
+}
+
+.fiveam-button {
+    border-color: var(--pink) !important;
+    background-color: white !important;
+    color: var(--pink) !important;
+}
+
+.md-nav__item .md-nav__link--active {
+    color: var(--pink);
+    font-weight: 600;
+}
+
+.md-nav__link:hover {
+    color: var(--pink);
+}
