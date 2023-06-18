@@ -2,7 +2,7 @@
 
 Managing users and groups is an essential task for system administrators, who have to ensure that the system is secure and runs smoothly. This also includes software engineers working with Dockerfiles.
 
-In this blog post, we'll cover the basics of user and group management in Linux.
+In this post, we'll cover the basics of user and group management in Linux.
 
 ## Current user
 
@@ -10,7 +10,7 @@ The `whoami`, `groups` and `id` commands can be used to get information about th
 
 `whoami` simply returns the username of the current user, while `groups`  displays the names of the groups that the user is a member of:
 
-```bash
+```
 $ whoami
 albert-rz
 $ groups
@@ -19,7 +19,7 @@ albert-rz sudo
 
 `id` provides more detailed information about the current user, including the user ID (UID), group ID (GID), and any supplementary group IDs:
 
-```bash
+```
 $ id
 uid=1000(albert-rz) gid=1000(albert-rz) groups=1000(albert-rz),27(sudo)
 ```
@@ -40,7 +40,7 @@ $ cut -d : -f 1 /etc/group
 
 ## Add
 
-`useradd` is used to create new user accounts. As an example, The command below will add a new user named "albert-rz":
+`useradd` is used to create new user accounts. As an example, The command below will add a new user named "max":
 
 ```bash
 $ useradd -s /bin/bash -m -G sudo max
@@ -60,7 +60,7 @@ $ echo 'max:new_password' | chpasswd
 
 Finally, we can log in as the new user and access the home directory.
 
-```bash
+```
 $ su - max
 ```
 
@@ -70,7 +70,7 @@ The equivalent command for groups is `groupadd`.
 
 Accounts can be deleted with `userdel`. As an example, the command below will delete a user named "max" and the its home directory:
 
-```bash
+```
 $ userdel -r max
 ```
 
@@ -82,7 +82,7 @@ After creating an account, `usermod` enables you to modify the user's home direc
 
 The example below demonstrates how to use usermod. First, we create a user named "max" along with their home folder and some files.
 
-```bash
+```
 $ useradd -m max
 $ ls -la /home/max
 $ su - max

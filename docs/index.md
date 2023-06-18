@@ -28,3 +28,12 @@ In this blog post, we'll cover the basics of user and group management in Linux.
 
 [Read](articles/users_groups.md){ .md-button .fiveam-button }
 
+<hr>
+
+### Linux commands for process management
+
+This post covers the fundamentals of Linux process management, which includes monitoring and controlling the processes running on a Linux system. We will discuss how to list processes and jobs, terminate them, and manage the resources they consume.
+
+[Read](articles/process_management.md){ .md-button .fiveam-button }
+
+<hr>
